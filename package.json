@@ -1,6 +1,6 @@
 {
   "name": "kunsam-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tools for build react lib project",
   "keywords": [
     "react",
@@ -16,7 +16,7 @@
     "test": "jest",
     "lint": "eslint lib",
     "postinstall": "node lib/init.js",
-    "pub": "git push origin && npm publish",
+    "pub": "git push origin && npm run patch version && npm publish",
     "prettier": "node ./script/prettier.js"
   },
   "dependencies": {
